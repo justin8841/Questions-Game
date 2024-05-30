@@ -66,10 +66,14 @@ function AnsList({ ans1, ans2, ans3, handleMore}) {
   
 
 function Title(){
+  function restart() {
+    location.reload()
+  }
   return(
     <>
     <h1>Game Over</h1>
-    <p>Thanks for playing <br /> refresh page </p>
+    <p>Thanks for playing</p>
+    <button onClick={restart}> reset</button>
     </>
   )
 }
